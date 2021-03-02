@@ -1,0 +1,8 @@
+sphinx==1.8.5
+sphinx-intl==2.0.1
+docutils==0.14
+sphinxcontrib-svg2pdfconverter==1.0.1
+sphinx-autobuild==2020.9.1
+awscli==1.19.17
+panflute==2.0.5
+sphinxcontrib.plantuml==0.19
