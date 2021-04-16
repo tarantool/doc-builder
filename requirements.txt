@@ -7,4 +7,4 @@ awscli==1.19.17
 panflute==2.0.5
 sphinxcontrib.plantuml==0.19
 polib==1.1.0
-
+ablog==0.10.17
