@@ -1,0 +1,21 @@
+FROM python:3.8-slim
+
+LABEL maintainer="Artem Morozov <artem.morozov@corp.mail.ru>"
+
+COPY requirements.txt /tmp/requirements.txt
+
+             # required by jre
+RUN mkdir -p /usr/share/man/man1 && \
+    apt-get update && \
+    apt-get -y install --no-install-recommends --no-install-suggests \
+        curl=7.* \
+        imagemagick=8:* \
+        librsvg2-bin=2.* \
+        plantuml=1:1.* \
+        make=4.* \
+        cmake=3.* && \
+    rm -rf /var/lib/apt/lists/* \
+    && pip install -r /tmp/requirements.txt --no-cache-dir \
+    && mkdir /doc
+
+WORKDIR /doc
