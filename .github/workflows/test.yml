@@ -1,0 +1,28 @@
+name: Test Dockerfiles
+
+on:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Check Dockerfile
+        run: docker run --rm -i hadolint/hadolint < Dockerfile
+
+      - name: Check Dockerfile-slim
+        run: docker run --rm -i hadolint/hadolint < Dockerfile-slim
+
+      - name: Build tarantool/doc-builder fat image
+        run: |
+          docker build \
+            -t tarantool/doc-builder:fat-test .
+
+      - name: Build tarantool/doc-builder slim image
+        run: |
+          docker build -f Dockerfile-slim \
+            -t tarantool/doc-builder:slim-test .

@@ -4,6 +4,10 @@ Pull docker image
 ```bash
 docker pull tarantool/doc-builder
 ```
+or the slim version without pdf builders
+```bash
+docker pull tarantool/doc-builder:slim
+```
 
 Then build a documentation
 ```bash
