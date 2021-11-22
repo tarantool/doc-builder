@@ -1,15 +1,20 @@
-# Docker image for building any Tarantool documentation
+# Docker images for building Tarantool documentation
 
-Pull docker image
+## Getting started
+
+Pull the docker image
 ```bash
-docker pull tarantool/doc-builder
+docker pull tarantool/doc-builder:fat
 ```
-or the slim version without pdf builders
+
+or the slim version if you don't need PDF builders
+
 ```bash
 docker pull tarantool/doc-builder:slim
 ```
 
-Then build a documentation
+Then build the documentation
+
 ```bash
 docker run --rm -it -v $(pwd):/doc tarantool/doc-builder sh -c "make <doc>"
 ```
@@ -26,3 +31,9 @@ docker run --rm -it -v $(pwd):/doc tarantool/doc-builder sh -c "make <doc>"
 - awscli
 - pandoc
 - panflute
+
+## Version history
+
+### 1
+
+The base image versions based on Sphinx 1.8.5
