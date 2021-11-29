@@ -34,6 +34,10 @@ docker run --rm -it -v $(pwd):/doc tarantool/doc-builder sh -c "make <doc>"
 
 ## Version history
 
+### 2.1
+
+* Added the [sphinx-panels](https://github.com/executablebooks/sphinx-panels/) extension
+
 ### 2
 
 * Using Sphinx 2.4.5
