@@ -34,6 +34,10 @@ docker run --rm -it -v $(pwd):/doc tarantool/doc-builder sh -c "make <doc>"
 
 ## Version history
 
+### 2
+
+* Using Sphinx 2.4.5
+
 ### 1
 
-The base image versions based on Sphinx 1.8.5
+* The base image versions based on Sphinx 1.8.5
