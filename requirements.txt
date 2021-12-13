@@ -1,4 +1,4 @@
-sphinx==2.4.5
+sphinx==2.2.2
 sphinx-intl==2.0.1
 docutils==0.14
 sphinxcontrib-svg2pdfconverter==1.0.1
