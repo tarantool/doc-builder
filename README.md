@@ -34,6 +34,13 @@ docker run --rm -it -v $(pwd):/doc tarantool/doc-builder sh -c "make <doc>"
 
 ## Version history
 
+### 4.0
+
+* Sphinx updated to 4.3.1
+* sphinxcontrib-svg2pdfconverter updated to 1.2.0
+* sphinxcontrib-plantuml updated to 0.22
+* tex-gyre package added
+
 ### 2.1
 
 * Added the [sphinx-panels](https://github.com/executablebooks/sphinx-panels/) extension
