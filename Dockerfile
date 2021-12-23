@@ -18,7 +18,6 @@ RUN mkdir -p /usr/share/man/man1 && \
         xzdec=5.2.* \
         plantuml=1* \
         graphviz=2.* \
-        pandoc=2.* \
         make=4.* \
         gcc=4* \
         unzip=6.* \
@@ -35,6 +34,9 @@ RUN mkdir -p /usr/share/man/man1 && \
         https://raw.githubusercontent.com/tarantool/LDoc/tarantool/ldoc-scm-2.rockspec \
             --server=http://rocks.moonscript.org && \
     pip install -r /tmp/requirements.txt --no-cache-dir && \
+    curl -L -O https://github.com/jgm/pandoc/releases/download/2.16.2/pandoc-2.16.2-1-amd64.deb && \
+    dpkg -i pandoc-2.16.2-1-amd64.deb && \
+    rm pandoc-2.16.2-1-amd64.deb && \
     mkdir /doc
 
 ENV PATH=/.rocks/bin:$PATH
