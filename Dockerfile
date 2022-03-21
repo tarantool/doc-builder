@@ -14,6 +14,7 @@ RUN mkdir -p /usr/share/man/man1 && \
         texlive-latex-extra=20* \
         texlive-fonts-extra=20* \
         texlive-extra-utils=20* \
+        tex-gyre=20* \
         librsvg2-bin=2.* \
         xzdec=5.2.* \
         plantuml=1* \
