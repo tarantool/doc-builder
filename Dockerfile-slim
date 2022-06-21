@@ -13,6 +13,7 @@ RUN mkdir -p /usr/share/man/man1 && \
         librsvg2-bin=2.* \
         plantuml=1:1.* \
         make=4.* \
+        dvisvgm=2.11.1-1 \
         cmake=3.* && \
     rm -rf /var/lib/apt/lists/* \
     && pip install -r /tmp/requirements.txt --no-cache-dir \
