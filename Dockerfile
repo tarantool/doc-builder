@@ -28,8 +28,8 @@ RUN mkdir -p /usr/share/man/man1 && \
         libc6-dev=2* \
         dvisvgm=2.11.1-1 \
         cmake=3.* && \
-    curl -L https://tarantool.io/release/2.6/installer.sh | bash && \
-    apt-get install -y tarantool=2.6.* tarantool-dev=2.6.* \
+    curl -L https://tarantool.io/release/2/installer.sh | bash && \
+    apt-get install -y tarantool=2.10.* tarantool-dev=2.10.* \
         --no-install-recommends && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
