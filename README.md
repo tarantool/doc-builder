@@ -53,6 +53,10 @@ docker run --rm -it -v $(pwd):/doc tarantool/doc-builder sh -c "make <doc>"
 
 ## Version history
 
+### Unreleased
+
+* Add recommonmark and sphinx-rtd-theme
+
 ### 4.1
 
 * Add dvisvgm package for buinding SVGs with math formulas.
