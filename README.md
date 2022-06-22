@@ -6,7 +6,7 @@
 
 Default (fat) image:
 ```bash
- docker build -t tarantool/doc-builder:fat-tag . 
+docker build -t tarantool/doc-builder:fat-tag . 
 ```
 
 Slim image
@@ -54,6 +54,8 @@ docker run --rm -it -v $(pwd):/doc tarantool/doc-builder sh -c "make <doc>"
 ## Version history
 
 ### Unreleased
+
+### 4.2
 
 * Add recommonmark and sphinx-rtd-theme
 
