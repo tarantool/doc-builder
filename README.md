@@ -11,7 +11,7 @@ Default (fat) image:
 
 Slim image
 ```bash
-docker build -t tarantool/doc-builder:slim-4.1 --file Dockerfile-slim .
+docker build -t tarantool/doc-builder:slim-tag --file Dockerfile-slim .
 ```
 ### Releasing the image
 
