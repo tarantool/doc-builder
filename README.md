@@ -1,5 +1,23 @@
 # Docker images for building Tarantool documentation
 
+## Contributing
+
+### Building the image locally
+
+Default (fat) image:
+```bash
+ docker build -t tarantool/doc-builder:fat-tag . 
+```
+
+Slim image
+```bash
+docker build -t tarantool/doc-builder:slim-4.1 --file Dockerfile-slim .
+```
+### Releasing the image
+
+Put an annotated tag on the commit after merging your PR.
+CI will build and publish it to Docker Hub.
+
 ## Getting started
 
 Pull the docker image
@@ -31,8 +49,13 @@ docker run --rm -it -v $(pwd):/doc tarantool/doc-builder sh -c "make <doc>"
 - awscli
 - pandoc
 - panflute
+- dvisvgm
 
 ## Version history
+
+### 4.1
+
+* Add dvisvgm package for buinding SVGs with math formulas.
 
 ### 4.0
 
