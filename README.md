@@ -67,6 +67,10 @@ Tools for building and deploying docs:
 
 ### Unreleased
 
+### 4.3
+
+* Add the [sphinx-toolbox](https://sphinx-toolbox.readthedocs.io) extension.
+
 ### 4.2
 
 * Add recommonmark and sphinx-rtd-theme
