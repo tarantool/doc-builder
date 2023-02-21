@@ -12,3 +12,4 @@ pygments-graphql==1.0.0
 sphinx-panels==0.6.0
 recommonmark==0.7.1
 sphinx-rtd-theme==1.0.0
+sphinx-toolbox==3.4.0

@@ -39,21 +39,37 @@ docker run --rm -it -v $(pwd):/doc tarantool/doc-builder sh -c "make <doc>"
 
 ## What's on board:
 
-- sphinx 1.8.5
-- texlive 
-- graphviz
-- sphinx-intl
-- docutils
-- sphinxcontrib-svg2pdfconverter
+- Sphinx 4.3.1
+- Some image processing tools:
+
+  - graphviz
+  - dvisvgm
+  - imagemagick
+  - sphinxcontrib-svg2pdfconverter
+
+- Sphinx themes and plugins:
+
+  - sphinx-rtd-theme
+  - pydata-sphinx-theme
+  - ablog
+  - pygments-graphql
+  - sphinx-intl and polib for localization
+  - recommonmark for Markdown support
+
+Tools for building and deploying docs:
+
 - sphinx-autobuild
+- curl
+- cmake
 - awscli
-- pandoc
-- panflute
-- dvisvgm
 
 ## Version history
 
 ### Unreleased
+
+### 4.3
+
+* Add the [sphinx-toolbox](https://sphinx-toolbox.readthedocs.io) extension.
 
 ### 4.2
 

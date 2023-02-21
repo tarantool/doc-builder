@@ -1,6 +1,6 @@
 FROM python:3.8-slim
 
-LABEL maintainer="Artem Morozov <artem.morozov@corp.mail.ru>"
+LABEL maintainer=""
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
