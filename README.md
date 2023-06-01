@@ -55,6 +55,11 @@ docker run --rm -it -v $(pwd):/doc tarantool/doc-builder sh -c "make <doc>"
 
 ### Unreleased
 
+### 4.3
+
+* myst-parser added
+* docutils updated to 0.15
+
 ### 4.2
 
 * Add recommonmark and sphinx-rtd-theme
