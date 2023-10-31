@@ -55,6 +55,10 @@ docker run --rm -it -v $(pwd):/doc tarantool/doc-builder sh -c "make <doc>"
 
 ### Unreleased
 
+### 4.4
+
+* base Docker image updated to `3.8-slim-bookworm`
+
 ### 4.3
 
 * myst-parser added

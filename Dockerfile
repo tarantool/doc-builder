@@ -1,4 +1,4 @@
-FROM python:3.8-slim
+FROM python:3.8-slim-bookworm
 
 LABEL maintainer="Artem Morozov <artem.morozov@corp.mail.ru>"
 
